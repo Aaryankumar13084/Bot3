@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
     "scripts": {
-          "dev": "nodemon --env-file=.env Bot.js"
+          "start": "node Bot.js"
             },
     
   "keywords": [],
