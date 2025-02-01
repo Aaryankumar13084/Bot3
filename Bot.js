@@ -36,7 +36,7 @@ bot.command("statistics", async (ctx) => {
 
   if (ctx.from.id.toString() !== adminId) {
     console.log("Unauthorized access attempt to statistics command."); // Debugging log
-    return ctx.reply("You are not authorized to view the statistics.");
+    return ctx.reply("❌ You are not authorized to view the statistics.");
   }
 
   try {
@@ -99,7 +99,7 @@ bot.command("deleteuser", async (ctx) => {
   const adminId = process.env.ADMIN_ID; // केवल एडमिन को अनुमति देने के लिए
 
   if (ctx.from.id.toString() !== adminId) {
-    return ctx.reply("❌ आप इस कमांड को उपयोग करने के लिए अधिकृत नहीं हैं।");
+    return ctx.reply("❌ You are not authorized to view the statistics.");
   }
 
   // कमांड से यूजर आईडी निकालना
