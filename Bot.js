@@ -124,6 +124,61 @@ bot.command("deleteuser", async (ctx) => {
   }
 });
 
+// 📌 Command to send a message to all registered users  
+bot.command("broadcast", async (ctx) => {
+  const adminId = process.env.ADMIN_ID;  
+
+  if (ctx.from.id.toString() !== adminId) {
+    return ctx.reply("❌ You are not authorized to use this command.");
+  }
+
+  const messageText = ctx.message.text.split(" ").slice(1).join(" ");
+  if (!messageText) {
+    return ctx.reply("⚠ Please provide a message. Example: `/broadcast This is a test message`");
+  }
+
+  try {
+    const users = await User.find();
+    for (const user of users) {
+      try {
+        await bot.telegram.sendMessage(user.telegramId, `📢 *Announcement:*\n\n${messageText}`, { parse_mode: "Markdown" });
+      } catch (error) {
+        console.error(`Error sending message to ${user.telegramId}:`, error);
+      }
+    }
+    ctx.reply("✅ Message sent to all registered users.");
+  } catch (err) {
+    console.error("Broadcast Error:", err);
+    ctx.reply("❌ Failed to send the message.");
+  }
+});
+
+// 📌 Command to send a message to a specific user  
+bot.command("senduser", async (ctx) => {
+  const adminId = process.env.ADMIN_ID;  
+
+  if (ctx.from.id.toString() !== adminId) {
+    return ctx.reply("❌ You are not authorized to use this command.");
+  }
+
+  const args = ctx.message.text.split(" ");
+  if (args.length < 3) {
+    return ctx.reply("⚠ Please provide a user ID and message. Example: `/senduser 123456789 Hello, how are you?`");
+  }
+
+  const userId = args[1];
+  const messageText = args.slice(2).join(" ");
+
+  try {
+    await bot.telegram.sendMessage(userId, `📩 *Message:*\n\n${messageText}`, { parse_mode: "Markdown" });
+    ctx.reply(`✅ Message sent to user: ${userId}`);
+  } catch (err) {
+    console.error(`Error sending message to ${userId}:`, err);
+    ctx.reply("❌ Failed to send the message.");
+  }
+});
+
+
 // Define Poll Questions
 const levelPolls = {
   1: [
