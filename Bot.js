@@ -200,6 +200,12 @@ const levelPolls = {
    { question: "Q3: ChatGPT kis prakar ki AI technology ka use karta hai?", options: ["Natural Language Processing (NLP)", "Virtual Reality (VR)", "Augmented Reality (AR)", "Robotics"], correctOptionId: 0 }, 
    { question: "Q4. ChatGPT ka pramukh upyog kis cheez ke liye hota hai?", options: ["Data storage", "Language translation", "Human-like conversation", "Gaming"], correctOptionId: 2 },
 ],
+  4: [
+    { question: "Q1: Netlify par account banane ke liye sabse pehla step kya hai?", options: ["Netlify ki website par jana" , "GitHub download karna", "Browser refresh karna", "Phone restart karna"], correctOptionId: 0 },
+   { question: "Q2: Netlify par kaun-kaun se account se sign up kar sakte hain?", options: ["GitHub" , "Google", "Email", "Sabhi"], correctOptionId: 3  },
+  { question: "Netlify kis cheez ke liye sabse zyada use hota hai?", options: ["Online gaming" , "Website hosting", "Video editing", "Mobile apps banane ke liye"], correctOptionId: 1 },
+   { question: "Q4: Netlify par account banane ke baad sabse pehla kaam kya hota hai?", options: ["Naya project banana ya website deploy karna" , "Computer band karna", "Instagram kholna", "Account delete karna"], correctOptionId: 0 },
+  ], 
 };
 
 
@@ -217,6 +223,11 @@ const levelVideos = {
     videoLink: "https://youtu.be/yjkBHP0XTwM?si=MkwmUQ6GJfcDRkSC", // Replace with actual YouTube link
     thumbnail: "https://img.youtube.com/vi/DAgs1P67FrQ/maxresdefault.jpg", // Replace with thumbnail URL
   },
+  4: {
+    videolink: "https://youtu.be/yVfS7kTi09c?si=5HQzQgevoNpCnBXi", 
+    thumbnail: "https://img.youtube.com/vi/yVfS7kTi09c/maxresdefault.jpg", // Replace with thumbnail URL
+
+  }, 
 };
 
 // Function to Start a Level (Send Video First)
