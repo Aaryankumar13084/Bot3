@@ -226,7 +226,6 @@ const levelVideos = {
   4: {
     videolink: "https://youtu.be/yVfS7kTi09c?si=5HQzQgevoNpCnBXi", 
     thumbnail: "https://img.youtube.com/vi/yVfS7kTi09c/maxresdefault.jpg", // Replace with thumbnail URL
-
   }, 
 };
 
