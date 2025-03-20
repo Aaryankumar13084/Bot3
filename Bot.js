@@ -206,6 +206,11 @@ const levelPolls = {
   { question: "Netlify kis cheez ke liye sabse zyada use hota hai?", options: ["Online gaming" , "Website hosting", "Video editing", "Mobile apps banane ke liye"], correctOptionId: 1 },
    { question: "Q4: Netlify par account banane ke baad sabse pehla kaam kya hota hai?", options: ["Naya project banana ya website deploy karna" , "Computer band karna", "Instagram kholna", "Account delete karna"], correctOptionId: 0 },
   ], 
+5: [
+   {  question: "Q1: Netlify pe project deploy karne ke liye sabse pehle kya karna padta hai?", options: ["Kuch bhi nahi" , "Mobile restart karna", "ZIP file download karna", "Netlify ko uninstall karna"], correctOptionId: 2}, 
+ { question: "Q2: Netlify website pe "Browse to upload" button kis liye hota hai?", options: ["Game khelne ke liye", "Movie download karne ke liye", "ZIP file upload karne ke liye", "Website close karne ke liye"], correctOptionId: 2 },
+ { question: "Q3: Netlify project deploy hone ke baad hume kya milta hai?", options: ["Free recharge", "Ek live project link", "Error message", Certificate"], correctOptionId: 1 },
+], 
 };
 
 
@@ -227,6 +232,10 @@ const levelVideos = {
     videoLink: "https://youtu.be/yVfS7kTi09c?si=5HQzQgevoNpCnBXi", 
     thumbnail: "https://img.youtube.com/vi/yVfS7kTi09c/maxresdefault.jpg", // Replace with thumbnail URL
   }, 
+ 5: {
+    videoLink: "https://youtu.be/1owzVs2glkk?si=jDNU-7KGBNT0Wb59", // Replace with actual YouTube link
+    thumbnail: "https://img.youtube.com/vi/1owzVs2glkk/maxresdefault.jpg", // Replace with thumbnail URL
+  },
 };
 
 // Function to Start a Level (Send Video First)
