@@ -209,7 +209,7 @@ const levelPolls = {
 5: [
    {  question: "Q1: Netlify pe project deploy karne ke liye sabse pehle kya karna padta hai?", options: ["Kuch bhi nahi" , "Mobile restart karna", "ZIP file download karna", "Netlify ko uninstall karna"], correctOptionId: 2}, 
  { question: "Q2: Netlify website pe 'Browse to upload' button kis liye hota hai?", options: ["Game khelne ke liye", "Movie download karne ke liye", "ZIP file upload karne ke liye", "Website close karne ke liye"], correctOptionId: 2 },
- { question: "Q3: Netlify project deploy hone ke baad hume kya milta hai?", options: ["Free recharge", "Ek live project link", "Error message", Certificate"], correctOptionId: 1 },
+ { question: "Q3: Netlify project deploy hone ke baad hume kya milta hai?", options: ["Free recharge", "Ek live project link", "Error message", "Certificate"], correctOptionId: 1 },
 ], 
 };
 
