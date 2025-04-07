@@ -96,31 +96,31 @@ bot.command("statistics", async (ctx) => {
 
 // Delete User Command
 bot.command("deleteuser", async (ctx) => {
-  const adminId = process.env.ADMIN_ID; // केवल एडमिन को अनुमति देने के लिए
+  const adminId = process.env.ADMIN_ID; // only admin
 
   if (ctx.from.id.toString() !== adminId) {
     return ctx.reply("❌ You are not authorized to view the statistics.");
   }
 
-  // कमांड से यूजर आईडी निकालना
+  // user id
   const args = ctx.message.text.split(" ");
   if (args.length < 2) {
-    return ctx.reply("⚠ कृपया एक Telegram ID प्रदान करें। उदाहरण: `/deleteuser 123456789`");
+    return ctx.reply("⚠ mujhe Telegram ID de Ex - `/deleteuser 123456789`");
   }
 
-  const userId = args[1]; // यूजर ID को प्राप्त करें
+  const userId = args[1]; // user id
 
   try {
     const deletedUser = await User.findOneAndDelete({ telegramId: userId });
 
     if (deletedUser) {
-      ctx.reply(`✅ User ${userId} सफलतापूर्वक डिलीट कर दिया गया।`);
+      ctx.reply(`✅ User ${userId} safalta purwak delete Kiya gya.`);
     } else {
-      ctx.reply(`⚠ User ${userId} डेटाबेस में नहीं मिला।`);
+      ctx.reply(`⚠ User ${userId} nahi mila`);
     }
   } catch (err) {
     console.error("Error deleting user:", err);
-    ctx.reply("❌ यूजर को डिलीट करने में समस्या हुई।");
+    ctx.reply("❌ user ko delete karne me err.");
   }
 });
 
@@ -247,7 +247,7 @@ async function startLevel(ctx, user) {
 
     // Send thumbnail image with "Watch Video" button
     await bot.telegram.sendPhoto(user.telegramId, video.thumbnail, {
-      caption: `📹 इस वीडियो को ध्यान से देखें, फिर क्विज़ शुरू होगा। Level ${level -1}`,
+      caption: `📹 es video ko dhiyan se dekhe eske baad quiz suru kogi Level ${level -1}`,
       reply_markup: {
         inline_keyboard: [
           [
