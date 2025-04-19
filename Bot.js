@@ -236,6 +236,10 @@ const levelVideos = {
     videoLink: "https://youtu.be/1owzVs2glkk?si=jDNU-7KGBNT0Wb59", // Replace with actual YouTube link
     thumbnail: "https://img.youtube.com/vi/1owzVs2glkk/maxresdefault.jpg", // Replace with thumbnail URL
   },
+6: {
+    videoLink: "https://youtu.be/LR6Plo7IicM?si=g4gqBw_3LL2JHoX0", // Replace with actual YouTube link
+    thumbnail: "https://img.youtube.com/vi/LR6Plo7IicM/maxresdefault.jpg", // Replace with thumbnail URL
+  },
 };
 
 // Function to Start a Level (Send Video First)
