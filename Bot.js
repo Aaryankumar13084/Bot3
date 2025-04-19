@@ -427,6 +427,8 @@ bot.on("callback_query", async (ctx) => {
           Markup.button.callback("Level 1", "change_to_2"),
           Markup.button.callback("Level 2", "change_to_3"), 
           Markup.button.callback("Level 3", "change_to_4"), 
+         Markup.button.callback("Level 4", "change_to_5"), 
+         Markup.button.callback("Level 5", "change_to_6"), 
         ])
       );
     }
