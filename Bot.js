@@ -212,7 +212,7 @@ const levelPolls = {
  { question: "Q3: Netlify project deploy hone ke baad hume kya milta hai?", options: ["Free recharge", "Ek live project link", "Error message", "Certificate"], correctOptionId: 1 },
 ], 
 6: [
-   {  question: "Q1: Telegram bot banane ke liye sabse pehle kya karna padta hai?", options: ["Node.js install karna" , Telegram kholo aur BotFather search karo", "VS Code download karo", "Naya Gmail banao"], correctOptionId: 1}, 
+   {  question: "Q1: Telegram bot banane ke liye sabse pehle kya karna padta hai?", options: ["Node.js install karna" , "Telegram kholo aur BotFather search karo", "VS Code download karo", "Naya Gmail banao"], correctOptionId: 1}, 
  { question: "Q2: BotFather ko bot banane ke liye kaunsi command bhejni hoti hai?", options: ["/start", "/createbot", "/newbot", "/addbot"], correctOptionId: 2 },
  { question: "Q3: /newbot bhejne ke baad BotFather kya poochta hai?", options: ["Telegram username", "Email ID", "Phone number", "Bot ka naam"], correctOptionId: 3 },
 { question: "Q4: Bot ka username kaisa hona chahiye?", options: [""_admin" se end ho", "Real name ho", ""bot" se end ho", "Number hona chahiye"], correctOptionId: 2 },
