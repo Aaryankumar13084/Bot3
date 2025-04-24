@@ -256,7 +256,7 @@ const levelVideos = {
   },
 7: {
     videoLink: "https://youtu.be/Gs6SYyD-gSs?si=QKshTSmY9rFVJbdl", // Replace with actual YouTube link
-    thumbnail: "https://img.youtube.com/viGs6SYyD-gSs/maxresdefault.jpg", // Replace with thumbnail URL
+    thumbnail: "https://img.youtube.com/vi/Gs6SYyD-gSs/maxresdefault.jpg", // Replace with thumbnail URL
   },
 };
 
