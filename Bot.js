@@ -223,7 +223,7 @@ const levelPolls = {
  { question: "Q2: Bot ko connect karne ke liye kya chahiye?", options: ["Username", "Password", "API token", "Number"], correctOptionId: 2 },
  { question: "Q3: ctx.from me kya milta hai?", options: ["Bot ka naam", "User ki ID & naam", "Speed", "Sabka chat"], correctOptionId: 1 },
 { question: "Q4: hi msg pe reply chahiye, to kya likhenge?", options: ["bot.command", "bot.reply", "bot.hears", "bot.listen"], correctOptionId: 2 },
-{ question: "Q5: Nodemon kyun use hota hai?", options: ["Password", "API banane", "Auto restart, "Live karne"], correctOptionId: 3 },
+{ question: "Q5: Nodemon kyun use hota hai?", options: ["Password", "API banane", "Auto restart", "Live karne"], correctOptionId: 3 },
 ], 
 };
 
