@@ -218,6 +218,13 @@ const levelPolls = {
 { question: "Q4: Bot ka username kaisa hona chahiye?", options: ["_admin se end ho", "Real name ho", "bot se end ho", "Number hona chahiye"], correctOptionId: 2 },
 { question: "Q5: Bot banne ke baad BotFather kya deta hai?", options: ["Password", "Login link", "API token", "Invite code"], correctOptionId: 2 },
 ], 
+7: [
+   {  question: "Q1: Telegraf kis kaam aata hai?", options: ["WhatsApp bot" , "Telegram bot", "Discord bot", "Instagram API"], correctOptionId: 1}, 
+ { question: "Q2: Bot ko connect karne ke liye kya chahiye?", options: ["Username", "Password", "API token", "Number"], correctOptionId: 2 },
+ { question: "Q3: ctx.from me kya milta hai?", options: ["Bot ka naam", "User ki ID & naam", "Speed", "Sabka chat"], correctOptionId: 1 },
+{ question: "Q4: hi msg pe reply chahiye, to kya likhenge?", options: ["bot.command", "bot.reply", "bot.hears", "bot.listen"], correctOptionId: 2 },
+{ question: "Q5: Nodemon kyun use hota hai?", options: ["Password", "API banane", "Auto restart, "Live karne"], correctOptionId: 3 },
+], 
 };
 
 
@@ -246,6 +253,10 @@ const levelVideos = {
 6: {
     videoLink: "https://youtu.be/LR6Plo7IicM?si=g4gqBw_3LL2JHoX0", // Replace with actual YouTube link
     thumbnail: "https://img.youtube.com/vi/LR6Plo7IicM/maxresdefault.jpg", // Replace with thumbnail URL
+  },
+7: {
+    videoLink: "https://youtu.be/Gs6SYyD-gSs?si=QKshTSmY9rFVJbdl", // Replace with actual YouTube link
+    thumbnail: "https://img.youtube.com/viGs6SYyD-gSs/maxresdefault.jpg", // Replace with thumbnail URL
   },
 };
 
@@ -440,6 +451,7 @@ bot.on("callback_query", async (ctx) => {
           Markup.button.callback("L-3", "change_to_4"), 
          Markup.button.callback("L-4", "change_to_5"), 
          Markup.button.callback("L-5", "change_to_6"), 
+Markup.button.callback("L-6", "change_to_7"), 
         ])
       );
     }
