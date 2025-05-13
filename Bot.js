@@ -225,6 +225,12 @@ const levelPolls = {
 { question: "Q4: hi msg pe reply chahiye, to kya likhenge?", options: ["bot.command", "bot.reply", "bot.hears", "bot.listen"], correctOptionId: 2 },
 { question: "Q5: Nodemon kyun use hota hai?", options: ["Password", "API banane", "Auto restart", "Live karne"], correctOptionId: 3 },
 ], 
+8: [
+   {  question: "Q1: Termux ka mukhya upyog kisliye hota hai?", options: ["Game khelne ke liye" , "Android apps install karne ke liye", "Linux command-line tools chalane ke liye", "Photo edit karne ke liye"], correctOptionId: 2}, 
+ { question: "Q2: Termux me VS Code server install karne ke liye kaunsa package use hota hai?", options: ["pkg install vscode", "pkg install vs-termux", "pkg install vscode-mobile", "pkg install code-server"], correctOptionId: 3 },
+ { question: "Q3: Termux me storage access dene ke liye kaunsa command hota hai?", options: ["termux-access-storage", "termux-grant-storage", "termux-setup-storage", "storage-allow-termux"], correctOptionId: 2 },
+{ question: "Q4: Termux me kisi file ko edit karne ke liye kaunsa command use karte hain?", options: ["edit-file", "termux-edit", "nano", "vim-only"], correctOptionId: 2 },
+], 
 };
 
 
@@ -257,6 +263,10 @@ const levelVideos = {
 7: {
     videoLink: "https://youtu.be/Gs6SYyD-gSs?si=QKshTSmY9rFVJbdl", // Replace with actual YouTube link
     thumbnail: "https://img.youtube.com/vi/Gs6SYyD-gSs/maxresdefault.jpg", // Replace with thumbnail URL
+  },
+8: {
+    videoLink: "https://youtu.be/mXfQsWkdZQw?si=S7PazVFiZGCKKwWU", // Replace with actual YouTube link
+    thumbnail: "https://img.youtube.com/vi/mXfQsWkdZQw/maxresdefault.jpg", // Replace with thumbnail URL
   },
 };
 
